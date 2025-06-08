@@ -10,12 +10,12 @@ import ButtonInputSearch from '../ButtonInputSearch/ButtonInputSearch';
 
 const HeaderComponent = () => {
     return (
-        <div>
+        <div style={{ width: '100%', background: 'rgb(26, 148, 255)', display: 'flex', justifyContent: 'center' }}>
             <WrapperHeader>
-                <Col span={6}>
+                <Col span={5}>
                     <WrapperTextHeader>DACS</WrapperTextHeader>
                 </Col>
-                <Col span={12}>
+                <Col span={13}>
                     <ButtonInputSearch
                         size="large"
                         bordered={false}
@@ -23,7 +23,7 @@ const HeaderComponent = () => {
                         placeholder="input search text"
                     />
                 </Col>
-                <Col span={6} style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
+                <Col span={6} style={{ display: 'flex', gap: '32px', alignItems: 'center', flex: 'none' }}>
                     <WrapperTextAccount>
                         <UserOutlined style={{ fontSize: '30px' }} />
                         <div>
@@ -34,7 +34,7 @@ const HeaderComponent = () => {
                             </div>
                         </div>
                     </WrapperTextAccount>
-                    <div>
+                    <div style={{ width: '50px' }}>
                         <Badge count={4} size="small">
                             <ShoppingCartOutlined style={{ fontSize: '30px', color: '#fff' }} />
                         </Badge>

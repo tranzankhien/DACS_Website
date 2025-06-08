@@ -4,8 +4,8 @@ import styled from "styled-components";
 export const WrapperCardStyle = styled(Card)`
     border: none;
     & img {
-        height: 200px;
-        width: 200px !important;
+        height: 150px;
+        width: 160px !important;
     }
     position: relative;
     .ant-card-cover {
